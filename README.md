@@ -1,2 +1,4 @@
-# HolisticWare.Core.Math.SetTheory
-HolisticWare.Core.Math.SetTheory
+# HolisticWare.Core.Math.Statistics.Descriptive
+
+HolisticWare.Core.Math.Statistics.Descriptive
+
