@@ -22,7 +22,7 @@ jobs:
           dotnet-version: '8.0.x'
       - uses: nuget/setup-nuget@v2
       - uses: microsoft/setup-msbuild@v2
-      - uses: cake-build/cake-action@v2
+      - uses: cake-build/cake-action@v2.0.0
       
       - name: Set up projects for analysis
         uses: security-code-scan/security-code-scan-add-action@main
@@ -34,4 +34,4 @@ jobs:
         uses: security-code-scan/security-code-scan-results-action@main
 
       - name: Upload sarif
-        uses: github/codeql-action/upload-sarif@v1
+        uses: github/codeql-action/upload-sarif@v2
