@@ -10,7 +10,7 @@ on:
     # The branches below must be a subset of the branches above
     branches: [ master ]
   schedule:
-    - cron: '31 9 * * 4'
+    - cron: '59 23 1,15 * *'
 
 jobs:
   SCS:
@@ -27,7 +27,7 @@ jobs:
         run: dotnet restore
 
       - name: Build
-        run: dotnet build --no-restore
+        run: dotnet cake
 
       - name: Convert sarif for uploading to GitHub
         uses: security-code-scan/security-code-scan-results-action@main
